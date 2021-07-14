@@ -1,3 +1,117 @@
 body{
     font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+.button-login{
+    background-color: mediumvioletred;
+    padding: 10px 24px;
+    transition: 1s all;
+    font-weight: 700;
+    border-radius: 10px;
+    align-items: flex-end;
+    justify-content: end;
+    display: flex;
+    color: white;
+}
+.button-login:hover{
+    background-color: white;
+    padding: 20px 48px;
+    transform: scale(1.2);
+    font-size: 20px;
+    color: black;
+}
+.header-section{
+    background-color: navy;
+    align-items: flex-end;
+    padding: 30px;
+}
+.full-header{
+    background-color: navy;
+    width: 97%;
+    height: 50%;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    color: white;
+    font-size: 64px;
+}
+.full-header img{
+    height: 70%;
+    width: 70%;
+    /* align-items: flex-end;
+    position: relative;
+    display: flex; */
+}
+.header-banner{
+    width: 50%;
+    height: 50%;
+}
+.header-text{
+    text-align: left;
+}
+/* header complete */
+.players-all{  
+       
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.players{
+    width: 330px;
+    height: 474px;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: 10px 10px 25px #d8d7d7; 
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.player{
+   height: 50%;
+   margin: 10px  
+}
+.player img{   
+    height: 110%;
+}
+.player h1{
+    font-size: 24px;
+    font-weight: 700; 
+    color: black;   
+}
+.player p{
+    font-size: 12px;
+}
+/* footer started */
+
+footer img{
+    width: 40%;
+    padding-left: 30%;
+}
+p{
+    text-align: center;
+}
+/* media queries */
+@media only screen and (max-width:688px) {
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        width: 100%;
+    }
+.players-all{         
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+}
+.players{
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: 10px 10px 25px #d8d7d7; 
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
 }
